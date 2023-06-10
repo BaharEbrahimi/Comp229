@@ -1,0 +1,66 @@
+<!-- nav bar -->
+<!-- file name : main_ejs.ejs
+    Name : Jay Joshi
+   Student ID : 301318520
+	 Date : 20-02-2023 --> 
+<nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img src="/Assets/images/j3.png" width="30" height="30" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+
+          <% let title = "";
+           if (title == "Home") {%>
+            <a class="nav-link active" href="/home">
+              <%} else {%> 
+                <a class="nav-link" href="/home"> 
+              <% } %>
+              <i class="fa-solid fa-house-chimney"></i><p style="color:white; font-size:20px">Home</p></a>
+          </li>
+
+          <li class="nav-item">
+          <% if (title == "About") {%>
+            <a class="nav-link active" href="/about">
+              <%} else {%> 
+                <a class="nav-link" href="/about"> 
+              <% } %>
+            <i class="fa-solid fa-circle-info"></i><p style="color:white; font-size:20px">About</p></a>
+          </li>
+
+          <li class="nav-item">
+          <% if (title == "Products") {%>
+            <a class="nav-link active" href="/products">
+              <%} else {%> 
+                <a class="nav-link" href="/products"> 
+              <% } %>
+            <i class="fa-brands fa-elementor"></i> <p style="color:white; font-size:20px">Products</p></a>
+          </li>
+
+          <li class="nav-item">
+          <% if (title == "Services") {%>
+            <a class="nav-link active" href="/services">
+              <%} else {%> 
+                <a class="nav-link" href="/services"> 
+              <% } %>
+            <i class="fa-solid fa-gears"></i> <p style="color:white; font-size:20px">Services</p></a>
+          </li>
+
+          <li class="nav-item">
+          <% if (title == "Contact") {%>
+            <a class="nav-link active" href="/contactus">
+              <%} else {%> 
+                <a class="nav-link" href="/contactus"> 
+              <% } %>
+            <i class="fa-regular fa-mobile-screen-button"></i> <p style="color:white; font-size:20px">Contact</p></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
